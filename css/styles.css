@@ -25,7 +25,8 @@ body {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
-    padding-top: 4rem; 
+    padding-top: 4rem;
+}
 
 a {
     text-decoration: none;
@@ -109,7 +110,7 @@ img {
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
-        gap: 8rem;
+        gap: 8rem; 
     }
     .navegacion__boton {
         display: flex;
