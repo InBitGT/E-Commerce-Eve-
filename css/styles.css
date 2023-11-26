@@ -73,7 +73,7 @@ img {
     right: 0;
     z-index: 1000; 
     padding: 1rem 0; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0); /* Sombra para dar profundidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
 
    }
 .barra__logo {
@@ -87,7 +87,7 @@ align-items: center;
     font-weight: 700;
     font-size: 1.6rem;
     display: block;
-    padding: 1rem 1rem 0 1rem; /* Reducir el padding inferior */
+    padding: 1rem 1rem 0 1rem;
     border-radius: 0.7rem;
     transition: background-color 0.3s ease;
     position: relative;
@@ -97,7 +97,7 @@ align-items: center;
 .navegacion__enlace::after {
     content: '';
     position: absolute;
-    bottom:  0; /* Ajustar esta propiedad si es necesario */
+    bottom:  0;
     left: 0;
     width: 0;
     height: 2px;
