@@ -65,27 +65,52 @@ img {
 .barra {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     position: fixed;
-    width: 85%; 
+    width: 100%; 
     top: 0; 
+    left: 0;
+    right: 0;
     z-index: 1000; 
+    padding: 1rem 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0); /* Sombra para dar profundidad */
+
    }
-
-
+.barra__logo {
+display: flex;
+align-items: center;
+}
+   
 
 .navegacion__enlace {
     color: var(--cafe);
     font-weight: 700;
     font-size: 1.6rem;
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem; /* Reducir el padding inferior */
     border-radius: 0.7rem;
     transition: background-color 0.3s ease;
+    position: relative;
+    margin-bottom: auto;
+}
+
+.navegacion__enlace::after {
+    content: '';
+    position: absolute;
+    bottom:  0; /* Ajustar esta propiedad si es necesario */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--cafe);
+    transition: width 0.3s;
+}
+
+.navegacion__enlace:hover::after {
+    width: 100%;
 }
 
 .navegacion__enlace:hover {
-    color: var(--blanco);
+    color: var(--beige);
 }
 .login, .register {
     background-color: transparent;
@@ -99,7 +124,11 @@ img {
     
 }
 
-.login:hover, .register:hover {
+.login:hover{
+    background-color: var(--cafe);
+    color: var(--blanco);
+}
+.register:hover {
     background-color: var(--blanco);
     color: var(--cafe);
 }
@@ -108,7 +137,9 @@ img {
     background-color: var(--cafe);
     color: var(--blanco);
 }
-
+.navegacion {
+    display: flex;
+}
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
@@ -150,14 +181,37 @@ img {
     object-fit: cover;
     border-radius: 1rem;
 }
+.categoria__imagen:hover {
+    transform: scale(1.014);
+    transition: all 0.3s ease;
+}
 .categoria__nombre {
     font-size: 2.4rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     color: var(--negro);   
+    text-transform: uppercase;
+    position: relative;
 }
 
+.categoria__nombre::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--cafe);
+    transition: width 0.3s;
+}
 
+.categoria__nombre:hover::after {
+    width: 100%;
+}
+
+.categoria__nombre:hover {
+    color: var(--cafe);
+}
 
 /* Footer */
 .footer {
