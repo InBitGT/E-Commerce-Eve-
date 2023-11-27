@@ -67,10 +67,10 @@ img {
     justify-content: space-between;
     /*align-items: center;*/
     position: fixed;
-    width: 100%; 
+    max-width: 100%; 
     top: 0; 
-    left: 0;
-    right: 0;
+    left: 1rem;
+    right: 5.5rem;
     z-index: 1000; 
     padding: 1rem 0; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
@@ -94,7 +94,7 @@ align-items: center;
     margin-bottom: auto;
 }
 
-.navegacion__enlace::after {
+.navegacion__enlace::after, .navegacion__enlace--activo::after {
     content: '';
     position: absolute;
     bottom:  0;
@@ -105,7 +105,7 @@ align-items: center;
     transition: width 0.3s;
 }
 
-.navegacion__enlace:hover::after {
+.navegacion__enlace:hover::after, .navegacion__enlace--activo::after{
     width: 100%;
 }
 
@@ -235,3 +235,157 @@ align-items: center;
     height: 141px;
     margin-right: 6rem;
 }
+
+
+/* mujer.html */
+/* header-mujer */
+.header-mujer {
+    position: relative;
+    height: 830px;
+    background: url('https://s3-alpha-sig.figma.com/img/68ac/84fa/e397dc3ebed6c24ca68f066221a127a6?Expires=1701648000&Signature=g0dSr-79yj7lAerf0-KRx8~0Z3QNxGWUmBJP1SSsJrvn9J8hKJ66MTKv73IIgzUpuyFccrZlTBPFLEOvNLIj0u6cAxmqikjZsByS83ZGBF3I7vaRUulOh6Lsq0MTqxWcNWNPhg7UvRb1jgbNqkZ7U68d5-sVmiJgcajl1d7gnSfee7QNHf-BtbwXqjk6DZIjvnWRzcxVhCBB~JBynT6LlkeB~DCRGft6-MJc~7G2SyhVy1np6AubRxgDrRiUjTySQ6Ib2j~k37mBbp5~ZgPCQeCL3T5d0MoWf39-Kf0vraJSmGkU6yvuT3s3cB5NveqpEqYHg5jv-tPPMY-XEswikw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4') no-repeat center center / cover;
+    background-position: center 73%;
+    background-size: cover;
+}
+
+.header-mujer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Categorias-mujer */
+/* Categorias-mujer */
+.grid-mujer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 5rem;
+    padding: 0 5.5rem;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 100%;
+}
+@media (min-width: 480px) {
+    .grid-mujer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    
+
+}
+@media (min-width: 768px) {
+    .grid-mujer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+}
+@media (min-width: 992px) {
+    .grid-mujer {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+}
+
+
+.producto__informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 0;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.producto__favorito {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 0;
+}
+
+.producto__favorito.is-favorito svg {
+    fill: red;
+    stroke: red;
+}
+
+.producto__favorito, .producto__colores{
+    justify-self: end;
+}
+.producto__descripcion, .producto__colores, .producto__precio {
+    display: flex;
+    margin: auto 0;
+    font-size: 2rem;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+    flex-shrink: 0; 
+}
+.boton-ver-mas {
+    background-color: var(--beige);
+    color: var(--blanco);
+    border: none;
+    padding: 2rem 8rem 2rem 8rem;; 
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-column: 2 / 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton-ver-mas:hover {
+    background-color: var(--cafe);
+    color: var(--blanco);
+}
+
+
+.search-container {
+    position: relative;
+    max-width: 300px;   
+}
+.search-box {
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    outline: none; 
+}
+
+.search-button {
+    position: absolute; 
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0; 
+}
+
+.search-button .search-img {
+    height: 24px; 
+    width: auto;
+}
+
+.categorias-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.5rem;
+    margin: -7rem 0 4rem 0;
+}
+.formulario__campo {
+        border: none;
+        background-color: transparent;
+        color: var(--negro);
+        font-size: 2.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+    

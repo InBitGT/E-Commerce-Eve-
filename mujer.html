@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header header-mujer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="barra__logo" href="index.html" class="menu">
+                    <strong>//</strong>
+                    <img src="img/Logo.png" alt="Logo Eve" weight="40" height="80">
+                </a>
+                <nav class="navegacion">
+                    <a href="ofertas.html" class="navegacion__enlace">Ofertas</a>
+                    <a href="mujer.html" class="navegacion__enlace navegacion__enlace--activo">Mujer</a>
+                    <a href="hombre.html" class="navegacion__enlace">Hombre</a>
+                    <div class="navegacion__boton">
+                        <a href="Login.html" class="navegacion__enlace--boton">
+                            <button class="login">Iniciar Sesión</button>
+                        </a>
+                        <a href="register.html" class="navegacion__enlace--boton">
+                            <button class="register">Registrarse</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="categorias">
+        <div class="categorias-contenedor">
+            <form class="formulario">
+                <select class="formulario__campo">
+                    <option disabled selected>Categorías</option>
+                    <option>Ropa</option>
+                    <option>Zapatos</option>
+                    <option>Sombreros</option>
+                </select>
+            </form>
+            <div class="search-container">
+                <input type="search" id="search-box" class="search-box" placeholder="Buscar...">
+                <button class="search-button" aria-label="Buscar">
+                    <img class="search-img" src="/img/lupa.png" alt="buscar">
+                </button>
+            </div>
+        </div> <!--.categorias-contenedor-->
+        <div class="grid-mujer">
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/d0dd/1577/0589ffc48b44d5bf9a7fb8328dd7aa82?Expires=1702252800&Signature=Xc0J27bXE88Jw6Qk7m~AetCpOWzRZt5PfNozs5ithBCrHyfG2gR3DZWZS~z8E4GMMRIkIL4P83B3pZbtZhMea4CQ05AuYtYGxidn4fJt8~lBd7Uy4nj4FAX2qoZFZtCE6c1f9SLvwjSGnwnqCBtqFA6BmSyk0Kzd2PW4s6VuHvFzwbn~gIsFMyOLJMvQ6BIBO4bLd5sbEAC5YDp-boAq3S-pDnaS-uGd0NavLAzNVrVq4MuiE3OFcDfjrQ0L1yHqSe0gz9RQa-l1Ap1Lpss-E6q2PmkMr8r-MvBmTAZ830Se87NtKJ-PFqXWNULpb~ZVA4lvXPjqZfhm2pIh9rxsjQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/7580/2364/82ad736d15a05a2adf9870061d6d9738?Expires=1702252800&Signature=LAvP9KV5lSFnpFrI8upOjmemPvATY~6XqDtzaRVM8ZhdaPT7kaarUCdMHU7gpGKeytYu4r-~r5zjmrGhwqS~~tM4pB0l3ke6gb6ruFF81nW403q8bq9h050PZ2TBuz8PxbCMvCp1B3kV6DfE3Uqy1x9gmWi7TYKmHzShvBUTIoUjbF-dzvxFJ7tdQypeIuLyiWBdhkgo-j7bY7Pcqk0SdHBPtIWAke8KlTeT3Du-jF0ndqGnBrxBLPiqczNNrndcdmg0mYV7Z0izbX13P9~fRBCTPTJ6lUzkwsVfiu-qqV9LE4SXCNE0EL1GeMNEIrorMSNrhMi~g2iFlr3kxVU0BQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/345e/612d/f60a2f8773c9cbcd20fd65db001d3ad6?Expires=1702252800&Signature=iynZ6P11eW2lKNmJDsCf-0mjWiMhLWlAS6d9Po8lrvY36EQGROLAiYIWJZwGBGo9LwLu8nocfJn8DR8j7sxEXZUCIxCnwh-am~Qv-fI7zUNyMnlmmQAPYp46EU9WNZM4fSeYhU34URfp6PWXzgcmz8I7FNFVECY7fQhIBDVaECag~tJdHCNq~xa0w14VGDAvLKkqg6HFEJWPFfRLGZOLf6HtoWkOaUm-ohkT9GlCu6MDF297ssnQdqcl66HcQKNXYbnsEt8OkXXdwDwXzEF3RbTI82D5o7ctiGzJvfF9SEt6gCAOJah-Xnn4dXtnfiwTal~L~WfRtEwKzVYDPfC6Xw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/fc64/e94c/8dbf97e21abbfdec55a60188a28da5f4?Expires=1702252800&Signature=AY5nKqaPMGBjr3mnDH9wghVCd8TR0eJhBTOHFxyZ0kWDQUj53mAPYT5YI0J1bm9raeohI6ayLPUbFt0CmU08p4ybfeJ4YLqzOnpn06A4JCM~Lt6Rni980~mrlXz3y1-6F6Hr0F9XDMbpyNpk1QnQpwdgU7RxzLrhrQ8A8HsMXY-oBdac64p2l6DTUD8yFe5coDs34aLJdPxhpDDPwVaMQZMgS9ptNV~T9DbfszQgNO1RP0ztCgWl2mRxVesUzJ1hb~XQNvhPFwvHjHSZucCzmB4u192Ykq5hpPylVPGMhXa86ksSyWtKZORc7js0zI53b1T4RSWi9~OudshM~e0eJg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/a1d0/dd77/562caf54bb970019f237cca9c5ce40d3?Expires=1702252800&Signature=crnwldNfvOeEo3JKJVkuL4pC-ploknBmdTtlyvFbzeFimCi5q0jcz1q5O8A3jYV65~qo0Fs2~apKHC16dQWmQBcWrEUAOvskqlYPwWzxgh8GmY7G~oK1ovxAdfjbUSTZ90rku73R04BdblXDzc4sHSEm-NeeRZB-II990dq30i8ws7rj~~m6IKt1WjGzPyMyaL6RwyIae7MR7euj~JBjZepbbjuGo7Ytzmm445nl1W7WwEz8ydBYjZ12H0ImwwGDEUsbIFfsC6rjbB6Rus3pns~2MN4r0VTVj5epRSODt-NvqGijaTztpSvMg4qmL94DWTLcZ4Lu4kOVSU7-qvIXEA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/8c80/e052/90522baf100be17054e7fcea4ead30a7?Expires=1702252800&Signature=d-R3D2r~6dE2RrE~rq3LXzGUl3F7UWSeany6052AEuLprWqGvvBcDyEQ66gSb9RtmE7-bdAtvxkI6LPenONLfl3b5vUCRKDH-mN~BByuaC9wSwvtf2-mRtVd8bgJ8B~EBgW~CPUZo7-~sAyOmU7hg3id57nxmtOXt80QHffQd4IOKkr2rm-vc5pkJDyoWYfyACTb23RspwRq57ZPhtAGawYLp3un~1s9mCvqn83apgHHrCLdZj1b1ztdtlc3gNzKcqYlq5x1SqH0lNzyKUXWood-izk~X53bob6JFKk8rI2Na8MxDHcjxaxz89dO-H2Vy~e1y5LC8kdBBIj64UKz5w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/345e/612d/f60a2f8773c9cbcd20fd65db001d3ad6?Expires=1702252800&Signature=iynZ6P11eW2lKNmJDsCf-0mjWiMhLWlAS6d9Po8lrvY36EQGROLAiYIWJZwGBGo9LwLu8nocfJn8DR8j7sxEXZUCIxCnwh-am~Qv-fI7zUNyMnlmmQAPYp46EU9WNZM4fSeYhU34URfp6PWXzgcmz8I7FNFVECY7fQhIBDVaECag~tJdHCNq~xa0w14VGDAvLKkqg6HFEJWPFfRLGZOLf6HtoWkOaUm-ohkT9GlCu6MDF297ssnQdqcl66HcQKNXYbnsEt8OkXXdwDwXzEF3RbTI82D5o7ctiGzJvfF9SEt6gCAOJah-Xnn4dXtnfiwTal~L~WfRtEwKzVYDPfC6Xw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/d0dd/1577/0589ffc48b44d5bf9a7fb8328dd7aa82?Expires=1702252800&Signature=Xc0J27bXE88Jw6Qk7m~AetCpOWzRZt5PfNozs5ithBCrHyfG2gR3DZWZS~z8E4GMMRIkIL4P83B3pZbtZhMea4CQ05AuYtYGxidn4fJt8~lBd7Uy4nj4FAX2qoZFZtCE6c1f9SLvwjSGnwnqCBtqFA6BmSyk0Kzd2PW4s6VuHvFzwbn~gIsFMyOLJMvQ6BIBO4bLd5sbEAC5YDp-boAq3S-pDnaS-uGd0NavLAzNVrVq4MuiE3OFcDfjrQ0L1yHqSe0gz9RQa-l1Ap1Lpss-E6q2PmkMr8r-MvBmTAZ830Se87NtKJ-PFqXWNULpb~ZVA4lvXPjqZfhm2pIh9rxsjQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/fc64/e94c/8dbf97e21abbfdec55a60188a28da5f4?Expires=1702252800&Signature=AY5nKqaPMGBjr3mnDH9wghVCd8TR0eJhBTOHFxyZ0kWDQUj53mAPYT5YI0J1bm9raeohI6ayLPUbFt0CmU08p4ybfeJ4YLqzOnpn06A4JCM~Lt6Rni980~mrlXz3y1-6F6Hr0F9XDMbpyNpk1QnQpwdgU7RxzLrhrQ8A8HsMXY-oBdac64p2l6DTUD8yFe5coDs34aLJdPxhpDDPwVaMQZMgS9ptNV~T9DbfszQgNO1RP0ztCgWl2mRxVesUzJ1hb~XQNvhPFwvHjHSZucCzmB4u192Ykq5hpPylVPGMhXa86ksSyWtKZORc7js0zI53b1T4RSWi9~OudshM~e0eJg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/a1d0/dd77/562caf54bb970019f237cca9c5ce40d3?Expires=1702252800&Signature=crnwldNfvOeEo3JKJVkuL4pC-ploknBmdTtlyvFbzeFimCi5q0jcz1q5O8A3jYV65~qo0Fs2~apKHC16dQWmQBcWrEUAOvskqlYPwWzxgh8GmY7G~oK1ovxAdfjbUSTZ90rku73R04BdblXDzc4sHSEm-NeeRZB-II990dq30i8ws7rj~~m6IKt1WjGzPyMyaL6RwyIae7MR7euj~JBjZepbbjuGo7Ytzmm445nl1W7WwEz8ydBYjZ12H0ImwwGDEUsbIFfsC6rjbB6Rus3pns~2MN4r0VTVj5epRSODt-NvqGijaTztpSvMg4qmL94DWTLcZ4Lu4kOVSU7-qvIXEA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/8c80/e052/90522baf100be17054e7fcea4ead30a7?Expires=1702252800&Signature=d-R3D2r~6dE2RrE~rq3LXzGUl3F7UWSeany6052AEuLprWqGvvBcDyEQ66gSb9RtmE7-bdAtvxkI6LPenONLfl3b5vUCRKDH-mN~BByuaC9wSwvtf2-mRtVd8bgJ8B~EBgW~CPUZo7-~sAyOmU7hg3id57nxmtOXt80QHffQd4IOKkr2rm-vc5pkJDyoWYfyACTb23RspwRq57ZPhtAGawYLp3un~1s9mCvqn83apgHHrCLdZj1b1ztdtlc3gNzKcqYlq5x1SqH0lNzyKUXWood-izk~X53bob6JFKk8rI2Na8MxDHcjxaxz89dO-H2Vy~e1y5LC8kdBBIj64UKz5w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="categoria__imagen"
+                        src="https://s3-alpha-sig.figma.com/img/7580/2364/82ad736d15a05a2adf9870061d6d9738?Expires=1702252800&Signature=LAvP9KV5lSFnpFrI8upOjmemPvATY~6XqDtzaRVM8ZhdaPT7kaarUCdMHU7gpGKeytYu4r-~r5zjmrGhwqS~~tM4pB0l3ke6gb6ruFF81nW403q8bq9h050PZ2TBuz8PxbCMvCp1B3kV6DfE3Uqy1x9gmWi7TYKmHzShvBUTIoUjbF-dzvxFJ7tdQypeIuLyiWBdhkgo-j7bY7Pcqk0SdHBPtIWAke8KlTeT3Du-jF0ndqGnBrxBLPiqczNNrndcdmg0mYV7Z0izbX13P9~fRBCTPTJ6lUzkwsVfiu-qqV9LE4SXCNE0EL1GeMNEIrorMSNrhMi~g2iFlr3kxVU0BQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="mujer">
+                </a>
+                <div class="producto__informacion">
+                    <p class="producto__descripcion">Description</p>
+                    <p class="producto__colores">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#1E1E1E" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                fill="#283A47" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                                stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                    <p class="producto__precio">Q.000.00</p>
+                    <button class="producto__favorito" aria-label="Agregar a favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.3446 4.9881C2.88463 6.846 2 9.3844 2 12.0345C2 17.9753 5.9647 22.9621 10.1509 26.5511C12.2235 28.3281 14.301 29.7192 15.8625 30.6666C16.6421 31.1396 17.2904 31.5003 17.7413 31.7417C17.8312 31.7898 17.9132 31.8331 17.9868 31.8716C18.0623 31.83 18.1466 31.783 18.2393 31.7307C18.6913 31.4758 19.3407 31.0963 20.1217 30.6023C21.6856 29.613 23.7664 28.1713 25.8424 26.3592C30.0437 22.6922 34 17.7063 34 12.0345C34 9.3848 33.1155 6.8464 31.6556 4.9884C30.2005 3.1365 28.2134 2 25.9688 2C22.866 2 20.4594 4.0208 18.8976 7.2018L18 9.0301L17.1024 7.2018C15.5405 4.0206 13.1339 2 10.0312 2C7.7868 2 5.7997 3.1363 4.3446 4.9881ZM18 33C17.5662 33.901 17.5655 33.9007 17.5655 33.9007L17.561 33.8985L17.5496 33.8929L17.5087 33.8729C17.4735 33.8555 17.4227 33.8302 17.3573 33.7971C17.2264 33.7308 17.0371 33.6332 16.7977 33.5051C16.319 33.2489 15.6391 32.8704 14.825 32.3765C13.199 31.3899 11.0265 29.9362 8.8491 28.0695C4.5353 24.3711 0 18.8752 0 12.0345C0 8.9592 1.02123 5.9804 2.77202 3.7524C4.5276 1.51823 7.0561 0 10.0312 0C13.5348 0 16.1991 1.96337 18 4.7338C19.8008 1.9635 22.4651 0 25.9688 0C28.9442 0 31.4727 1.5185 33.2282 3.7527C34.9789 5.9809 36 8.9597 36 12.0345C36 18.617 31.4563 24.1139 27.1576 27.866C24.9836 29.7635 22.8144 31.2655 21.1908 32.2925C20.378 32.8067 19.6993 33.2035 19.2217 33.4728C18.9828 33.6075 18.794 33.7105 18.6636 33.7804C18.5985 33.8154 18.5479 33.8421 18.5129 33.8604L18.4724 33.8815L18.4611 33.8873L18.4578 33.8891L18.4567 33.8896C18.4567 33.8896 18.456 33.89 18 33ZM18 33L18.4567 33.8896L18.0139 34.1165L17.5655 33.9007L18 33Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </div> <!--.producto__informacion-->
+            </div> <!--.producto-->
+            <button class="boton-ver-mas">Ver más</button>
+        </div> <!--.grid-->
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div class="footer">
+                <div class="footer__redes">
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__redes--enlace">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="195" height="52.757" viewBox="0 0 24 24" stroke-width="2" stroke="#73351F"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M16.5 7.5l0 .01" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__redes--enlace">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round"
+                            stroke-miterlimit="2" clip-rule="evenodd" width="195" height="52.757" viewBox="0 0 70 64"
+                            id="Facebook">
+                            <path fill="none" d="M0 0h64v64H0z"></path>
+                            <path
+                                d="M30 58V37h-7v-7h7v-7c0-4.415 3.586-8 8-8h9v7h-5c-2.207 0-4 1.792-4 4l-.124 4H47l-1 7h-8v21h11c4.967 0 9-4.032 9-9V15c0-4.967-4.033-9-9-9H15c-4.968 0-9 4.033-9 9v34c0 4.968 4.032 9 9 9h15Z"
+                                fill="#73351f" class="color000000 svgShape"></path>
+                        </svg>
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="footer__redes--enlace">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
+                            width="195" height="52.757" viewBox="0 0 24 24" stroke-width="1.5" stroke="#73351F"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                        </svg>
+                    </a>
+
+                </div> <!--.footer__redes-->
+                <div class="footer__logo">
+                    <a href="index.html">
+                        <img src="/img/Logo.png" alt="Logo Eve">
+                    </a>
+                </div>
+            </div> <!--.footer-->
+        </div>
+    </footer>
+</body>
+
+</html>
