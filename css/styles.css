@@ -5,6 +5,7 @@
     --negro: #000000;
     --cafe: #73351F;
     --beige: #D9C8A9;
+    --principal: #d9d9d9;
 }
 
 html {
@@ -21,6 +22,7 @@ body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 2;
+    background-color: var(--principal);
 }
 
 .contenedor {
@@ -129,7 +131,7 @@ align-items: center;
     color: var(--blanco);
 }
 .register:hover {
-    background-color: var(--blanco);
+    background-color: var(--principal);
     color: var(--cafe);
 }
 
@@ -259,6 +261,7 @@ align-items: center;
 
 /* Categorias-mujer */
 /* Categorias-mujer */
+
 .grid-mujer {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -306,6 +309,9 @@ align-items: center;
     cursor: pointer;
     padding: 0.4rem 0;
 }
+.producto__favorito:hover{
+    stroke: red;
+}
 
 .producto__favorito.is-favorito svg {
     fill: red;
@@ -343,30 +349,38 @@ align-items: center;
     color: var(--blanco);
 }
 
-
 .search-container {
     position: relative;
-    max-width: 300px;   
+    max-width: 300px;
+    margin: 0 3rem;
 }
+
 .search-box {
     width: 100%;
-    padding: 10px 40px 10px 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    font-size: 16px; 
-    outline: none; 
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
 }
 
 .search-button {
-    position: absolute; 
-    right: 5px;
+    position: absolute;
+    left: 5px; 
     top: 50%;
-    transform: translateY(-50%); 
-    background: none; 
-    border: none; 
-    cursor: pointer; 
-    padding: 0; 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
+
+.search-icon {
+    height: 24px;
+    transform: scaleX(-1);
+}
+
+
 
 .search-button .search-img {
     height: 24px; 
@@ -389,3 +403,47 @@ align-items: center;
 }
 
     
+
+
+
+
+/* Producto */
+.producto-detalle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.producto-detalle-imagen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.categoria__imagen--extras {
+    display: flex;
+    max-width: 100%;
+    gap: 2rem;
+    width: 11rem;
+    height: 11rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagen-extra{
+    border-radius: 1rem;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left; 
+}
+
+.star {
+    font-size: 4rem;
+    cursor: pointer;
+    color: black; 
+}
+
+.star:hover,
+.star:hover ~ .star { 
+    color: orange;
+}
