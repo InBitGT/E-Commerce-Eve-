@@ -303,7 +303,7 @@ align-items: center;
     justify-items: stretch;
     align-items: stretch;
 }
-.producto__favorito, .producto__agregar-carrito {
+.producto__favorito, .producto__agregar-carrito, .producto__salir, .register-salir {
     background: none;
     border: none;
     cursor: pointer;
@@ -403,10 +403,6 @@ align-items: center;
 }
 
     
-
-
-
-
 /* Producto */
 .categorias-producto{
     margin-top: 2rem;
@@ -418,6 +414,7 @@ align-items: center;
     justify-content: center;
     gap: 6rem;
     font-size: 2.3rem;
+    margin: 3.5rem 0 0 0;
    
 }
 .producto-detalle-imagen {
@@ -500,5 +497,139 @@ align-items: center;
 .producto__tallas--boton:hover {
     color: var(--cafe);
     font-weight: bold;
+}
+.producto__salir{   
+    padding: 0 0 0 0;
+    margin: 0 -10rem auto 6rem;
+    display: flex;
+
+
+}
+
+
+/* Register */
+.register-detalle, .login-detalle {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 5fr 3fr 0.3fr;
+    gap: 2rem;
+    align-items: center;
+}
+.register-detalle-imagen, .login-detalle-imagen {
+    background-image: url(https://s3-alpha-sig.figma.com/img/cc6b/e2c1/ddb4d283a4b7bff3357ec0c7ae774696?Expires=1702252800&Signature=eUQfACUwkUbv6s4zt5pFYTNse7ED0AwJnSJ~tzV-p8cTJlel951f-PcN1P8cuJk8po8ZX5Ue~gGTetiMUqDC87gcCPWqwfZ3dQ~-f6PIvzM7ysiA2QA4qvow8S9AfJJ4iTiFZb~aM2PFjQH2vor6gHMq6kxnqS7Z8gc3hnsw674iiLc-dfzAgevztTjJ2v8DgW-8tg76VQDWml3OYpRrkTTExVsP8XMOcWB5X5JQ3j3B93HEL808cHG4gVAo7Cz3HVDr-9ayQ1iXzMZ8Y1SaFNJWK9UFuz~oeVW5O8Li5d9UZpu18kXNWEXsIymeWGa3sRSacG2MPDGRFW7o02N5Tg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-size: cover;
+    background-position: center;
+    height: 78.9rem;
+    width: 100%;
+    display: flex;
+    justify-content: initial;
+    align-items: end;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    
+}
+
+.footer__logo-register, .footer__logo-login {
+    width: 203px;
+    height: 141px;
+    margin-right: 6rem;
+    margin-bottom: 0.9rem;
+}
+.register-salir, .login-salir {
+    display: flex;
+    margin: 0 0 auto 0;
+}
+.formulario {
+    width: min( 60rem, 100%); /** Utilizar el valor mas pequeno **/
+    margin: 0 auto 0 2.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+
+.contenedor-campos, .contenedor-campos-login{
+    display: flex;
+    flex-direction: column; 
+        margin-bottom: 2rem;
+        border-bottom: #000000 0.3rem solid;
+}
+.campo {
+    margin-bottom: 2rem;
+}
+.campo label {
+    color: var(--negro);
+    margin-bottom: .5rem;
+    
+}
+.input-text {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-top: 0.7rem;
+}
+.register__redes-sociales {
+display: flex;
+justify-content: center;    
+margin: -3rem 0 0 2.5rem;
+}
+.register-redes {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0;
+    margin: 0 -3rem;
+}
+.registrarse-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 4rem 0;
+}
+.login-detalle-imagen {
+    background-image: url(https://s3-alpha-sig.figma.com/img/ccf8/4df1/c5c05676f028a4854d982fd59ab2f957?Expires=1702252800&Signature=BmZJU9NAE~QpVVrUm9IB406--Fi4VD~pMsCnevLR9EzbKeX4cdGDz5t79RvYowwDQfi9FaOT~hmOmCuDICKkJ8G0dr06BXTKfujhgWR1FRwG0qAAOYNI7QA~HfGqYIiMBSC1bhZrE~H7qUCJgMX3m9bs2E7~6tmLdMCmHeRJy1VWR6JrcUOFq5wcs0YhI4Y1cR3qs77~9peRMFh8gzrPCCQs7vNNCUFZjpVUzQkuNYdXWbao6gSNSjNdhj9P952-Gn1jCLXAFoHYkvWWrLy2tzxLawOrHuIVGs8KUqz6NGKYQB6pCTNwNSu0GucoKhgOUjQoCNlGFrkg~8dgNHM6Yg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 0 13rem;
+}
+.login-detalle{
+    grid-template-columns: 3fr 0.3fr 5fr;
+}
+.login-detalle-imagen{
+ grid-column: 3 / 4;    
+}
+.login-salir{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.formulario-login {
+    width: min( 60rem, 100%); /** Utilizar el valor mas pequeno **/
+    margin: 0 auto 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.formulario-login fieldset{
+    border: none;
+}
+.login-salir{
+    display: flex;
+    margin: auto 0 0 0;
+    padding-bottom: 3rem;
+}
+.login-form {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.login-detalle-imagen {
+    grid-column: 3 / 4;
+}
+.footer__logo-login {
+    margin: 0 1rem 0 0rem;
 }
 
